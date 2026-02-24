@@ -1,0 +1,300 @@
+* {
+   margin: 0px;
+   padding: 0px;
+   box-sizing: border-box;
+   font-family: sans-serif;
+}
+
+#container {
+   display: flex;
+   width: 100%;
+
+}
+
+body {
+   background-color: rgb(34, 25, 25);
+}
+
+.header {
+   width: 100%;
+   height: auto;
+   opacity: 0.9;
+}
+
+video {
+   width: 100%;
+   object-fit: cover;
+   opacity: 0.9;
+   height: 45vh;
+   position: absolute;
+}
+
+.same span {
+   color: white;
+}
+
+.same .left {
+   color: blue;
+   padding: 6px;
+}
+
+.nav_var {
+   display: flex;
+   width: 100%;
+   height: 60px;
+   justify-content: space-around;
+}
+
+a {
+   text-decoration: none;
+   color: rgb(58, 31, 162);
+   font-size: 18px;
+   font-weight: 600;
+   margin-top: 30px;
+   align-items: center;
+   justify-content: space-around;
+
+}
+
+a:hover {
+   text-decoration: none;
+   color: rgb(229, 48, 11);
+   margin-top: 30px;
+   align-items: center;
+   justify-content: space-around;
+   border-bottom: 2px solid yellow;
+
+}
+
+#logo {
+   width: 60px;
+   object-fit: cover;
+   height: 60px;
+   margin: 8px;
+   border-radius: 50px;
+}
+
+.header h1 {
+   color: rgb(219, 127, 22);
+   display: flex;
+   justify-content: center;
+}
+
+.header p {
+   display: flex;
+   justify-content: center;
+   color: rgb(225, 25, 25);
+   border: 2px solid blue;
+   border-radius: 10px;
+   background-color: rgba(54, 9, 9, 0.808);
+   font-size: 15px;
+   font-weight: 600;
+   margin: 6px 120px;
+   padding: 5px 0px;
+}
+
+.btn {
+   display: flex;
+   height: 60px;
+   margin: 20px;
+   justify-content: center;
+}
+
+.btn button {
+   border: 3px solid rgb(54, 190, 54);
+   border-radius: 9px;
+   width: 80px;
+   font-weight: 600;
+   background-color: rgb(233, 18, 18);
+   color: white;
+   cursor: pointer;
+}
+
+.btn button:hover {
+   border: 3px solid rgb(220, 71, 16);
+   border-radius: 9px;
+   padding: 0px 9px;
+   box-sizing: content-box;
+   font-weight: 600;
+   background-color: rgb(26, 192, 45);
+   color: white;
+}
+
+.btn input {
+   margin: 3px;
+   text-align: center;
+   width: 50%;
+   max-width: 400px;
+   padding: 9px 0px;
+   font-weight: 600;
+   font-size: 20px;
+   color: rgb(46, 80, 229);
+   border: 3px solid rgb(233, 211, 21);
+   border-radius: 12px;
+}
+
+.container {
+   justify-content: space-around;
+   display: flex;
+   flex-wrap: wrap;
+   margin: 30px;
+}
+
+.cart {
+   width: 13rem;
+   height: auto;
+   margin-top: 18px;
+
+}
+
+.image {
+   width: 100%;
+   height: 240px;
+   border: 2px solid red;
+   border-radius: 9px;
+   background-color: rgb(86, 167, 71);
+   padding: 3px;
+}
+
+
+
+.instruction button {
+   background-color: rgb(31, 213, 31);
+   padding: 7px 42px;
+   width: 100%;
+   border: 2px solid red;
+   border-radius: 9px;
+   cursor: pointer;
+   box-sizing: border-box;
+}
+
+.instruction button:hover {
+   background-color: rgb(102, 121, 226);
+   padding: 7px 42px;
+   color: white;
+   cursor: pointer;
+   width: 100%;
+   border-radius: 9px;
+   border: 2px solid rgb(0, 255, 76);
+}
+
+.video button {
+   background-color: rgb(221, 19, 32);
+   padding: 7px 42px;
+   margin-top: 3px;
+   cursor: pointer;
+   border-radius: 9px;
+   color: white;
+   width: 100%;
+   border: 2px solid rgb(60, 65, 206);
+}
+
+.loader {
+   height: 100px;
+   width: 100px;
+   margin: 30vh 43vw;
+   border-radius: 50%;
+   border-width: 20%;
+   border: 10px solid rgb(185, 181, 181);
+   border-bottom: 10px solid black;
+   animation-name: load;
+   animation-timing-function: ease-in-out;
+   animation-iteration-count: infinite;
+   animation-duration: 1s;
+
+}
+
+@keyframes load {
+   from {
+      transform: rotate(0deg);
+   }
+
+   to {
+      transform: rotate(360deg);
+   }
+}
+
+.error {
+   justify-content: center;
+   height: 90px;
+   margin-top: 100px;
+}
+
+.error h1 {
+   color: red;
+}
+
+.error div {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   height: auto;
+}
+
+.error div button {
+   height: 35px;
+   width: 65px;
+   background-color: rgb(215, 110, 110);
+   border: 3px solid rgb(34, 143, 34);
+   border-radius: 9px;
+   color: white;
+   font-size: 15px;
+   font-weight: 600;
+}
+
+.error div button:hover {
+   height: 40px;
+   width: 70px;
+   background-color: rgb(225, 33, 33);
+   border: 3px solid rgb(197, 234, 32);
+   border-radius: 9px;
+   color: white;
+   font-size: 15px;
+   font-weight: 600;
+}
+
+.popup {
+   background-color: aqua;
+   position: fixed;
+   height: 330px;
+   display: none;
+   margin: 0px 30%;
+   min-width: 40%;
+   top: 30%;
+   border: 4px solid rgb(219, 242, 151);
+   border-radius: 9px;
+}
+
+.popup button {
+   margin: 7px 0px 0px 80%;
+   background-color: red;
+   color: white;
+   border: 1px solid black;
+   padding: 3px;
+   font-weight: 600;
+   border-radius: 5px;
+   cursor: pointer;
+}
+
+.popup h1 {
+   margin-left: 12px;
+   font-size: 20px;
+   color: blue;
+}
+
+.popup p {
+   margin-left: 3px;
+   padding: 8px;
+}
+
+.popup .title {
+   color: rgb(210, 30, 90);
+   font-weight: 600;
+
+}
+
+.popup .Construction {
+   font-weight: 600;
+   overflow-y: auto;
+   height: 210px;
+}
